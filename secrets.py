@@ -1,7 +1,7 @@
 import os
 
 
-secret = os.environ.get("secret")
+secret = os.environ.get("SECRET")
 
 
 print(f"secret = {secret}")
