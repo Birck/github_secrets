@@ -16,7 +16,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    environment: "Secrets environment"
+    environment: production
 
     steps:
     - uses: actions/checkout@v3
