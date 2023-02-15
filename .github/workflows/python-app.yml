@@ -31,6 +31,6 @@ jobs:
     - name: Run
       env:
         secret: ${{ secrets.SECRET }}
-        envvar: ${{ variables.ENV_VARIABLE}}
+        envvar: ${{ secrets.ENV_VARIABLE}}
       run: |
         python secrets.py
