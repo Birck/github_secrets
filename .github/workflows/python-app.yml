@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run
-        env:
-          secret: ${{ secrets.SECRET }}
+      env:
+        secret: ${{ secrets.SECRET }}
       run: |
         python secrets.py
