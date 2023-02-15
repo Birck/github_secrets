@@ -29,4 +29,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run
       run: |
+        env:
+          secret: ${{ secrets.SECRET }}
         python secrets.py
